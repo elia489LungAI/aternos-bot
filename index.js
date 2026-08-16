@@ -3,7 +3,7 @@ const mineflayer = require('mineflayer');
 const bot = mineflayer.createBot({
   host: 'LungCraft.aternos.me',
   port: 57104,
-  username: 'AternosBot'
+  username: 'AI.Bot'
 });
 
 bot.on('spawn', () => {
