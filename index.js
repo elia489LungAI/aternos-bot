@@ -9,17 +9,17 @@ const bot = mineflayer.createBot({
 bot.on('spawn', () => {
   console.log("Bot joined and ready!");
   
-  // Jump and look around every 6 seconds
+  // Jump and look around every 1 seconds
   setInterval(() => {
     bot.setControlState('jump', true);
     setTimeout(() => bot.setControlState('jump', false), 500);
     bot.look(bot.entity.yaw + 1.5, 0);
-  }, 6000);
+  }, 1000);
 });
 
 bot.on('end', () => {
-  console.log("Bot disconnected, reconnecting in 5 seconds...");
-  setTimeout(() => process.exit(0), 5000);
+  console.log("Bot disconnected, reconnecting in 1 seconds...");
+  setTimeout(() => process.exit(0), 1000);
 });
 
 bot.on('error', (err) => console.log(err));
