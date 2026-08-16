@@ -1,7 +1,7 @@
 const mineflayer = require('mineflayer');
 
 const bot = mineflayer.createBot({
-  host: 'LungCraft.aternos.me:57104',
+  host: 'LungCraft.aternos.me',
   username: 'AternosBot'
 });
 
